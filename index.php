@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Doctor Batch</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="bootstrap.min.css">
 </head>
 <body>
 
@@ -21,7 +21,7 @@
 	<!-- wait icon -->
 	<div class="container" ng-hide="loading">
 		<div class="row text-center">
-			<img src="./images/loading.gif" alt="loading image" width="50" height="50">
+			<img src="loading.gif" alt="loading image" width="50" height="50">
 		</div>
 	</div>
 
@@ -60,8 +60,8 @@
 
 </div>
 
-<script src="js/angular.js"></script>
-<script src="js/index.js"></script>
+<script src="angular.js"></script>
+<script src="index.js"></script>
 
 </body>
 </html>
