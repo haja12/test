@@ -14,23 +14,6 @@ if ($conn->connect_error) {
 	die("Database Connection failed: " . $conn->connect_error);
 }
 
-//echo "connection"; exit;
-/*$name = array("Robin", "Flix", "Nithya", "Beula", "Rajkumar", "Chathrabathy", "Durga Reddy", "Kavin", "Vasanth", "Sam", "Santhosh", "Lakshmi", "Sakthi", "Venkat", "Anil", "Athithya", "Senthil",
-"Ramya", "Abirami", "Sunil", "Sundar", "Naveen", "Parthi", "Bhuvanesh", "Geethu", "Manju", "Srini", "Sredha", "Lokesh", "Malaichamy", "Mathi", "Jabeer", "Nithyanandhan", "Prabha", "Srijith",
-"Dharsan", "Sathish", "Arul", "Suresh", "Prasanna");
-$qualification = ['MS', 'MSurg', 'MD', 'MCh', 'ChM', 'CM', 'MCM', 'DM', 'DS'];
-$hospital = "Narayana";
-$location = "Delhi";
-$updated_date = ['2017-01-05 13:22:19', '2017-02-15 10:12:39', '2017-03-19 11:14:29', '2017-04-21 15:20:11', '2017-05-15 17:47:22', '2017-05-10 13:22:19', '2017-04-25 13:22:19',
-'2017-03-28 13:22:19', '2017-02-15 13:22:19', '2017-01-25 13:22:19'];
-
-//echo $updated_date[array_rand($updated_date)]; exit;
-
-for($i=0; $i<10; $i++) {
-	//echo "INSERT INTO `doctor` (`id`, `doctor_name`, `hospital_name`, `qualification`, `location`, `last_updated_date`) VALUES (NULL, '" . $name[array_rand($name)] . "', '".$hospital."', '" . $qualification[array_rand($qualification)] . "', '".$location."',  '" . $updated_date[array_rand($updated_date)] . "')"; exit;
-	$conn->query("INSERT INTO `doctor` (`id`, `doctor_name`, `hospital_name`, `qualification`, `location`, `last_updated_date`) VALUES (NULL, '" . $name[array_rand($name)] . "', '".$hospital."', '" . $qualification[array_rand($qualification)] . "', '".$location."',  '" . $updated_date[array_rand($updated_date)] . "')");
-}*/
-
 // last updated date condition
 $last_updated_gt_30_days = "WHERE (datediff(NOW(), last_updated_date) > 30)";
 
